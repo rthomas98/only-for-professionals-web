@@ -1,0 +1,35 @@
+.black-cta {
+  background-color: $black;
+  border-radius: 24px;
+
+  h2 {
+    color: $white;
+    font-weight: 700;
+  }
+  .lead {
+    color: $white;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .btn-secondary {
+    background-color: $white;
+    color: $black;
+    border-color: $white;
+
+    &:hover {
+      background-color: $red;
+      color: $white;
+      border-color: $red;
+    }
+  }
+
+  .btn-primary {
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border-color: $white;
+    }
+  }
+}

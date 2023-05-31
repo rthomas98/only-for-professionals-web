@@ -1,0 +1,28 @@
+.features {
+   .lead {
+     color: $red;
+   }
+
+    h2 {
+      font-weight: 700;
+    }
+
+  .feature {
+     .icon {
+       background-color: $mid-grey;
+       border-radius: 50%;
+       width: 48px;
+       height: 48px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 1rem;
+
+       i {
+         color: $red;
+         font-size: 1.5rem;
+       }
+
+     }
+  }
+}

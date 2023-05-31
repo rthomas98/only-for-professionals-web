@@ -12,3 +12,20 @@
 @import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
 @import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
 @import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+
+@import "theme/partials/header";
+@import "theme/partials/footer";
+@import "theme/partials/home-banner";
+@import "theme/partials/how-it-works";
+@import "theme/partials/image-right-cta";
+@import "theme/partials/red-bg-image-left";
+@import "theme/partials/about-banner";
+@import "theme/partials/stats";
+@import "theme/partials/features";
+@import "theme/partials/challenges";
+@import "theme/partials/app-header";
+@import "theme/partials/why-us";
+@import "theme/partials/notified";
+@import "theme/partials/contact-form";
+@import "theme/partials/black-cta";
+@import "theme/partials/faqs";

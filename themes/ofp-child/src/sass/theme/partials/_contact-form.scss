@@ -1,0 +1,15 @@
+.contact-form {
+
+  h1 {
+    font-weight: 700;
+  }
+
+  form.fluent_form_1 .ff-btn-submit {
+    background-color: $red;
+    color: #ffffff;
+
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+}

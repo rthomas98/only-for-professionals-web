@@ -1,0 +1,22 @@
+.footer {
+  background-color: $black;
+  color: $white;
+
+  h2 {
+    font-size: 24px;
+  }
+
+    a {
+      text-decoration: none;
+      color: $red;
+      &:hover {
+        color: $white;
+      }
+    }
+
+  .nav-item {
+    .nav-link {
+      display: inline-block;
+    }
+  }
+}
