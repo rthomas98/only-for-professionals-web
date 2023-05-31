@@ -1,0 +1,35 @@
+.challenges {
+  background-color: $red;
+
+  .icon {
+    background-color: $black;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    i {
+        color: $white;
+        font-size: 1.5rem;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-weight: 700;
+  }
+  .lead {
+    color: $white;
+  }
+
+  h3 {
+    color: $white;
+    font-weight: 700;
+  }
+  p {
+    color: $white;
+  }
+}

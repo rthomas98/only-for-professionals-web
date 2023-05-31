@@ -1,0 +1,61 @@
+.how-it-works {
+  .lead {
+    color: #475467;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  .dots {
+    position: absolute;
+    right: 0;
+    top: 20% !important;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  .box {
+    background-color: $mid-grey;
+
+    .icon {
+      height: 48px !important;
+      width: 48px !important;
+      border-radius: 10px;
+      background-color: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      i {
+        font-size: 24px;
+        color: white;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .content {
+      min-height: 120px;
+    }
+
+    &:hover {
+      background-color: $black;
+      color: white;
+
+      .icon {
+        background-color: $red;
+      }
+      h3 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+
+}

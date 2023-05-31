@@ -10,6 +10,8 @@ defined( 'ABSPATH' ) || exit;
 
 
 
+
+
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  */
@@ -92,3 +94,48 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+function add_font_awesome_pro() {
+    wp_enqueue_script( 'font-awesome-pro', 'https://kit.fontawesome.com/3529cf9057.js', array(), null ); // replace 'your-kit-code' with your actual kit code
+}
+add_action( 'wp_enqueue_scripts', 'add_font_awesome_pro' );
+
+
+
+class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+        $args = (object)$args;  // Ensure $args is an object
+
+        $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+        $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+        $class_names = ' class="' . esc_attr( $class_names ) . ' nav-item"';
+
+        $output .= '<li' . $id . $class_names .'>';
+
+        $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+        $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+        $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+        $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+        $attributes .= ' class="nav-link"';
+
+        $item_output = isset($args->before) ? $args->before : '';
+        $item_output .= '<a'. $attributes .'>';
+        $item_output .= isset($args->link_before) ? $args->link_before : '';
+        $item_output .= apply_filters( 'the_title', $item->title, $item->ID );
+        $item_output .= isset($args->link_after) ? $args->link_after : '';
+        $item_output .= '</a>';
+        $item_output .= isset($args->after) ? $args->after : '';
+
+        $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+    }
+}
+
+function add_nav_menus() {
+    register_nav_menus(
+        array(
+            'footer_menu_1' => 'Footer Menu',
+        )
+    );
+}
+add_action('init', 'add_nav_menus');
