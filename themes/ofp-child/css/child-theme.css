@@ -14991,6 +14991,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
 }
 
+form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
+  background-color: #FF1843 !important;
+  border-color: #FF1843 !important;
+  color: #ffffff;
+  min-width: 50%;
+  width: 50%;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #012169;
