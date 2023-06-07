@@ -14991,6 +14991,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
 }
 
+form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
+  background-color: #FF1843 !important;
+  border-color: #FF1843 !important;
+  color: #ffffff;
+  min-width: 50%;
+  width: 50%;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: #FFFFFF !important;
+  background-color: #000000 !important;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #012169;

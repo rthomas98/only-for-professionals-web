@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <?php the_field( 'get_notified_form', 'option' ); ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

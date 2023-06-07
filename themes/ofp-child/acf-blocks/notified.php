@@ -10,12 +10,13 @@
                 </p>
 
                 <div class="d-grid gap-2 d-md-block">
-                    <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#notifyMe" type="button"><?php the_sub_field( 'white_button_label' ); ?></a>
 
                     <?php $white_button_link = get_sub_field( 'white_button_link' ); ?>
                     <?php if ( $white_button_link ) : ?>
-                        <a class="btn btn-secondary" type="button" href="<?php echo esc_url( $white_button_link); ?>"><?php the_sub_field( 'black_button_label' ); ?></a>
+                        <a class="btn btn-outline-secondary" href="<?php echo esc_url( $white_button_link); ?>"><?php the_sub_field( 'white_button_label' ); ?></a>
                     <?php endif; ?>
+
+                    <a class="btn btn-secondary" type="button" type="button" data-bs-toggle="modal" data-bs-target="#notifyMe"><?php the_sub_field( 'black_button_label' ); ?></a>
 
                 </div>
             </div>

@@ -34,10 +34,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="d-grid gap-2 d-block">
-                            <?php $black_button_link = get_sub_field( 'black_button_link' ); ?>
-                            <?php if ( $black_button_link ) : ?>
-                                <a class="btn btn-secondary mb-4 mb-sm-4 mb-md-4 mb-lg-0 btn-block" href="<?php echo esc_url( $black_button_link); ?>"><?php the_sub_field( 'black_button_label' ); ?></a>
-                            <?php endif; ?>
+                                <a class="btn btn-secondary mb-4 mb-sm-4 mb-md-4 mb-lg-0 btn-block" type="button" data-bs-toggle="modal" data-bs-target="#notifyMe"><?php the_sub_field( 'black_button_label' ); ?></a>
                         </div>
                     </div>
                 </div>

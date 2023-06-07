@@ -21,10 +21,8 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="d-grid gap-2 d-block">
-                            <?php $red_button_link = get_sub_field( 'red_button_link' ); ?>
-                            <?php if ( $red_button_link ) : ?>
-                                <a class="btn btn-primary btn-lg mb-4 mb-sm-4 mb-md-4 mb-lg-0" href="<?php echo esc_url( $red_button_link); ?>"><?php the_sub_field( 'red_button_label' ); ?></a>
-                            <?php endif; ?>
+                                <a class="btn btn-primary btn-lg mb-4 mb-sm-4 mb-md-4 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#notifyMe"><?php the_sub_field( 'red_button_label' ); ?></a>
+
                         </div>
                     </div>
                 </div>

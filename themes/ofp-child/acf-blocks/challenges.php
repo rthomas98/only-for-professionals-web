@@ -11,12 +11,7 @@
                 <p class="lead">
                     <?php the_sub_field( 'sub_title' ); ?>
                 </p>
-
-
-                <?php $black_button_link = get_sub_field( 'black_button_link' ); ?>
-                <?php if ( $black_button_link ) : ?>
-                    <a class="btn btn-secondary mb-4 mb-sm-4 mb-md-4 mb-lg-0" href="<?php echo esc_url( $black_button_link); ?>"><?php the_sub_field( 'black_button_label' ); ?></a>
-                <?php endif; ?>
+                    <a class="btn btn-secondary mb-4 mb-sm-4 mb-md-4 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#notifyMe"><?php the_sub_field( 'black_button_label' ); ?></a>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-8">
                 <div class="row">
